@@ -13,7 +13,7 @@ pipeline {
     //Get the Code from GitHub Repo
     stage('CheckOutCode'){
       steps{
-        git branch: 'master', credentialsId: 'aeeaa4ad-45b4-4c30-9401-586ac501a9bb', url: 'https://github.com/MithunTechnologiesDevOps/jekins-ansible-dynimc-inv.git'
+        git credentialsId: 'd9d4ed8f-45f8-4327-a5c4-1d9800f22b19', url: 'https://github.com/vijaymanjunathas5/jekins-ansible-dynimc-inv.git'
       }
     }
      

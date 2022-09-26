@@ -1,7 +1,6 @@
 provider "aws"{
    region  = "ap-south-1" 
-   
-}
+   }
 
 resource "aws_instance" "AWSEC2Instance"{
      count   = 1
@@ -10,7 +9,7 @@ resource "aws_instance" "AWSEC2Instance"{
      security_groups = ["launch-wizard-3"]
      key_name        = "vijaymajunathas"
      tags = {
-        Name = "tomcatserver"
+        Name = "tomcats"
      }
 }
 
